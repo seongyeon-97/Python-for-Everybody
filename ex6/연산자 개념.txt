@@ -1,0 +1,40 @@
+upper 메서드
+문자열을 받아 모든 문자를 대문자로 변환한 새 문자열을 반환
+예)
+>>>word = 'banana'
+>>>new_word = word.upper()
+>>>print(new_word)
+BANANA
+
+find 메서드
+문자열 내에서 특정 문자를 찾는다.
+예)
+>>>word = 'banana'
+>>>index = word.find('a')
+>>>print(index)
+1
+
+하위 문자열도 찾을 수 있다.
+>>>word.find('na')
+2
+
+문자열 어디서부터 찾을 것인지 두 번째 인수로 전달 가능
+>>>word.find('na', 3)
+4
+
+strip 메서드
+문자열 내의 화이트 스페이스(공백, 탭, 줄바꿈 문자)를 제거
+>>>line = '   Have   '
+>>>line.strip()
+'Have'
+
+startswith 메서드
+boolean 값을 반환
+>>>line = 'Have a nice day'
+>>>line.startswith('Have')
+True
+>>>line.startswith('h')
+False                                   -> 대소문자를 구분 가능
+
+포멧 연산자 %
+%d = 정수 포멧, %g = 부동 소수점 포맷, %s = 문자열 포맷 
